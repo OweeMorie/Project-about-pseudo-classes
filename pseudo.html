@@ -1,0 +1,55 @@
+<html>
+<head>
+     <style>
+         /*1) Advance selector
+        a) Attribute selector
+        */
+        input[type="text"]{border:2px solid red }
+        /*b) child selector*/
+        ul>li{color: blueviolet;}
+         /*c) sibling selector*/
+         h2+p{color: red;}
+
+         /*2)Pseudo classes
+        a):hover*/
+        a:hover{color: red;
+        }
+        /*b/ :nth-child()*/
+        li:nth-child(2){font-size: 30px;}
+        /*c/ :not()*/
+        p:not(.c2){background-color: lightblue;}
+
+        /*3)Pseudo elements
+        a) ::before*/
+        p::before{content:"*W  "}
+        
+         /*3)Pseudo elements
+        a) ::after*/
+        p::after{content:"*  "}
+
+        /*c) ::first-letter*/
+        p::first-letter{font-size: 30px;color: pink;}
+
+
+     </style>
+</head>
+<body>
+    <ul>
+        <li>Menu</li>
+        <li>Form</li>
+        <li>About this form</li>
+        <li>Link</li>
+    </ul><br><br>
+    <form><h2>Form</h2>
+        Name: <input type="text"><br><br>
+        Age: <input type="number"><br>
+       </form><br><br>
+
+       <h2>About this Form</h2>
+       <p class="c1">hy do I need to fill in this form?</p>
+       <p class="c2">hen you fill this form, you can  blah blah blah blah...</p><br><br>
+       <h2>Link</h2>
+       <a href="#">Click Here<a> to view the form you filled earlier.<br><br>
+</body>
+
+</html>
